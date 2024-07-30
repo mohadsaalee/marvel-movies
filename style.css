@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+/* Navbar Section */
+#navbar{
+    background-color: #202020;
+    color: white;
+}
+#navbar .nav-top{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#navbar .nav-top .navtop-left{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+
+
+}
+#navbar .nav-top .navtop-left h6{
+    font-size: 16px;
+
+}
+#navbar .navtop-mid{
+    width: 10%;
+}
+#navbar .nav-top .navtop-mid img{
+    width: 100%;
+}
+#navbar .nav-top .navtop-right{
+    display: flex;
+    flex-direction: column;
+}
+#navbar .nav-top .navtop-right h6{
+    font-size: 16px;
+}
+#navbar .nav-bot ul{
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+}
+#navbar .nav-bot ul li{
+    margin-right: 14px;
+}
+#navbar .nav-bot ul li a{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+#navbar .nav-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+#navbar .nav-bottom h3{
+    text-align: center;
+    font-size: 14px;
+
+}
+#navbar .nav-bottom .disney-img{
+    width: 3%;
+}
+#navbar .nav-bottom .disney-img img{
+    width: 100%;
+}
+#spotlight{
+
+}
+#spotlight .spotlight-bg {
+    background-image: url(img/spotlight.jpg);
+    height: 50vh;
+    background-position: center;
+    object-fit: contain;
+}
+#spotlight .spotlight-bg .journey{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 ;
+}
+#spotlight .spotlight-bg .journey h1{
+    font-size: 50px;  
+}
+#spotlight .spotlight-bg .journey span{
+    font-size:20px;
+}
+#card{
+    position:  absolute;
+    top: 500px;
+    left: 100px;
+
+}
+#card ul{
+    display: flex;
+    padding: 20px ;
+    background-color: white;
+    width: 100%;
+    gap: 10px;
+
+}
+#card ul li{
+   width: 100%;
+   font-size: 13px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#card ul li:hover h3{
+    color: rgb(252, 55, 55);
+}
+#card ul li:hover img{
+    transform: translateY(-10px);
+    box-shadow:0px 0px 10px 0px rgb(245, 82, 82);
+}
+#card ul li img{
+    width: 100%;
+}
+#highlight{
+    padding-top: 40vh;
+
+}
+#highlight .highlight-bg{
+    background-image: url(img/highlight.jpg);
+    height: 50vh;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#highlight .highlight-bg .streaming{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+    padding: 80px 0;
+    gap: 10px;
+    
+    
+
+}
+#highlight .highlight-bg .streaming.disneylob{
+
+
+}
+#highlight .highlight-bg .streaming .universe{
+    color: white;
+
+}
+#highlight .highlight-bg .streaming .universe h3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+#highlight .highlight-bg .streaming .universe p{
+    font-size: 20px;
+}
+#highlight .highlight-bg .streaming .stream-button{
+    padding: 15px 25px;
+    background-color: rgb(245, 0, 0);
+    color: white;
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+#highlight .medias {
+    display: flex;
+    justify-content: end;
+    padding: 0 150px;
+    margin: 10px;
+    gap: 10px;
+}
+#highlight .medias i{
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+#latest-movies{
+
+}
+#latest-movies .teaser{
+
+}
+#latest-movies .teaser h2{
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+#latest-movies .teaser h5:hover{
+    color: red;
+
+
+}
+#latest-movies ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* gap: 10px; */
+
+
+}
+#latest-movies ul li{
+    width: 100%;
+    margin-right: 10px;
+    
+}
+#latest-movies ul li:nth-child(4){
+    margin-right: 0;
+
+}
+
+
+#latest-movies ul li img{
+    width: 100%;
+
+}
+#number h4{
+   display: flex;
+   justify-content: center;
+   letter-spacing: 10px;
+   cursor: pointer;
+   margin: 10px;
+
+}
+#marvel-movies{
+    padding: 50px;
+
+}
+#marvel-movies h2{
+    margin-bottom: 30px;
+
+
+
+}
+#marvel-movies ul{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    gap: 10px;
+    cursor: pointer;
+    
+    
+    
+}
+#marvel-movies ul li{
+    width: 100%;
+    margin-bottom: 10px
+    
+}
+#marvel-movies ul li img:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 50px 0px black;
+
+}
+#marvel-movies ul li:hover h5{
+    color: red;
+}
+
+
+
+#marvel-movies ul li img{
+    width: 100%;
+    
+
+}
+#marvel-movies .botton{
+    display: flex;
+    justify-content: center;
+    
+}
+#marvel-movies .botton button{
+    padding: 15px 45px;
+    margin: 30px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+
+}
+#other-movies{
+
+}
+#other-movies h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+
+}
+#other-movies .container{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    
+}
+#other-movies .container .movie-name{
+    width: 100%;
+ 
+
+}
+#other-movies .container .movie-name .movie-img{
+    width: 100%;
+
+}
+#other-movies .container .movie-name .movie-img img{
+    width: 100%;
+    
+
+
+
+}
+#other-movies .container .movie-name:hover h5{
+    color: red;
+
+
+
+}
+#other-movies .container .movie-name:hover .movie-img img{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 50px 0px rgb(0, 0, 0);
+}
+#music{
+
+}
+#music h2{
+    margin: 20px 10px;
+
+}
+#music .music-card{
+    display: flex;
+    gap: 10px;
+    /* width: 100%; */
+    /* justify-content: space-between; */
+
+}
+#music .music-card .spotify{
+    background-color: red;
+    /* width: 100%; */
+    border-radius: 20px;
+
+
+}
+#music .music-card .apple{
+    display: flex;
+    justify-content: space-between;
+}
+#music .music-card .spotify .spotify-top{
+    padding: 25px;
+    display: flex;
+    
+    /* gap: 20px; */
+    
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+
+}
+#music .music-card .spotify .spotify-top div{
+    margin-right: 5px;
+}
+#music .music-card .spotify .spotify-top .music-logo{
+    width: 30%;
+   
+
+}
+#music .music-card .spotify .spotify-top .music-logo img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+#music .music-card .spotify .spotify-top .music-preview{
+    color: white;
+    column-gap: 30px;
+}
+#music .music-card .spotify .spotify-top .music-preview h3{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 6px;
+
+}
+#music .music-card .spotify .spotify-top .music-preview h4{
+    margin-bottom: 10px;
+
+}
+#music .music-card .spotify .spotify-top .music-preview h5{
+    margin-bottom: 6px;
+
+}
+#music .music-card .spotify .spotify-top .icons{
+    display: flex;
+    gap: 20px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+#music .music-card .spotify .spotify-top .icons .icon i{
+    font-size: 20px;
+    color: white;
+}
+#music .music-card .spotify .spotify-top .icons .icon-play i{
+    font-size: 40px;
+    color: white;
+}
+#music .music-card .spotify-top i{
+
+}
+#music .music-card .spotify .bottom{
+    /* color: white; */
+    
+}
+#music .music-card .spotify ul {
+
+}
+#music .music-card .spotify ul li{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+    font-weight: 800;
+}
+
+#music .music-card .apple{
+
+    background-color: rgb(247, 240, 240);
+    border-radius: 10px;
+    padding: 20px ;
+    cursor: pointer;
+    
+
+}
+#music .music-card .apple .first-side{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+    margin-right: 10px 5px ;
+}
+#music .music-card .apple .first-side .echo{
+    /* padding: 30px 30px; */
+    border-radius: 20px;
+}
+#music .music-card .apple .first-side .music-playbtn button{
+    font-size: 20px;
+    background: red;
+    padding: 10px 100px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 900;
+}
+#music .music-card .apple .first-side .apple-logo{
+
+}
+#music .music-card .apple .first-side .apple-logo img{
+
+}
+#footer {
+    
+  
+ 
+
+}
+#footer .card-footer{
+    background-color: rgb(27, 26, 26);
+    color: white;
+    margin-top: 35px;
+}
+#footer .card-footer .top{
+
+}
+#footer .card-footer .top .insider{
+
+}
+#footer .card-footer .top .redeem{
+
+}
+#footer .card-footer .footer-top {
+    display: flex;
+    justify-content: center;
+    /* gap: 30px; */
+    background-color: black;
+}
+#footer .card-footer .footer-top .redeem{
+    padding: 100px;
+    text-align: center;
+}
+#footer .card-footer .footer-top .redeem .red{
+    color: red;
+    margin-bottom: 20px;
+}
+#footer .card-footer .footer-top .redeem .watch{
+    font-size: 30px;
+    margin-bottom: 20px;   
+}
+#footer .card-footer .footer-top .redeem .Get{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+#footer .card-footer .footer-top .redeem .jn{
+    color: white;
+    background-color: red;
+    padding: 15px 40px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#footer .card-footer {
+    display: flex;
+    flex-direction: column;
+}
+#footer .card-footer .footer-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+#footer .card-footer .footer-bottom .help{
+    display: flex;
+    justify-content: space-evenly;
+}
+#footer .card-footer .footer-bottom  .help .ul-about{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#footer .card-footer .footer-bottom  .help .ul-about li{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#footer .card-footer .footer-bottom .ad{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#footer .card-footer .footer-bottom .marvel-insider{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+#footer .card-footer .footer-bottom .marvel-insider img{
+    width: 65px;
+
+}
+
+#footer .card-footer .footer-bottom .insider-p{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ 
+}
+#footer .card-footer .follow-icon{
+
+}
+#footer .card-footer  .follow-icons .follow-icons-list{
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+
+}
+#footer .card-footer  .follow-icons .follow-icons-list i{
+    font-size: 30px;
+    color: gray;
+  
+}
+#footer .card-footer .terms{
+    /* display: flex; */
+}
+#footer .card-footer .terms .terms-ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: gray;
+    padding-bottom: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
